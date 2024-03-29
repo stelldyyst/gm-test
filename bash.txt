@@ -1,0 +1,8 @@
+pip install sqlite3
+pip install fastapi uvicorn
+python main.py
+
+Запуск: curl -X POST "http://127.0.0.1:8000/start_robot/10"
+Остановка: curl -X POST "http://127.0.0.1:8000/stop_robot"
+Информация о запусках: curl -X GET "http://127.0.0.1:8000/robot_runs"
+
